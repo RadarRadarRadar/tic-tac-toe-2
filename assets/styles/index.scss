@@ -1,1 +1,85 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+body {
+    background-color: #AA7139;
+}
+input {
+    border: none;
+    margin-bottom: 6px;
+}
+button {
+    background-color: #255C69;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.change-password, .sign-out {
+    margin-right: 6px;
+}
+
+.splash-title, .unauth-system-message, .sign-in-form, .sign-up-form, .change-password-form, .game-messages {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  max-width: 400px;
+  background-color: #7B84AE;
+  text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #7B84AE;
+}
+
+.nav-title {
+    margin-right: auto;}
+
+.nav-buttons {
+    display: inline-block;
+}
+
+.game-systems-display {
+    margin: auto;
+    text-align: center;
+}
+
+.game-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7B84AE;
+    height: 300px;
+    width: 300px;
+    border: 1px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.game-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+}
+
+
