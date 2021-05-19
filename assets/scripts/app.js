@@ -9,4 +9,12 @@ $(() => {
   $('.sign-in').on('submit', authEvent.onSignIn)
   $('.change-password').on('submit', authEvent.onChangePassword)
   $('.sign-out').on('click', authEvent.onSignOut)
+  $('.change-password').on('click', function() {
+    $('.change-password-form').show()
+  })
+  $('.cancel').on('click', function() {
+    $('.change-password-form').hide()
+  })
+  $('.start-new-game').on('click', gameEvent.onStartNewGame)
+  $('.games-played').on('click', gameEvent.onCheckGamesPlayed)
 })

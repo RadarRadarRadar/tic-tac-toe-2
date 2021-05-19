@@ -19,23 +19,23 @@
           <h3 class="splash-title-message">Welcome to Tic Tac Toe</h3>
         </div>
 
-        <div class="unauth-system-message">
-          <div class="system-message">Sign Up Successful!</div>
+        <div class="system-message">
+          <div class="unauth-system-message"></div>
         </div>
 
         <div class="sign-in-form">
           <form class="sign-in">
-            <input class="sign-in-email" name="credentials[email]" type="text" placeholder="email"><br>
-            <input class="sign-in-password" name="credentials[password]" type="text" placeholder="password"><br>
+            <input class="sign-in-email" name="credentials[email]" type="email" placeholder="email"><br>
+            <input class="sign-in-password" name="credentials[password]" type="password" placeholder="password"><br>
             <button class="sign-in-submit" type="submit">Sign In!</button>
           </form>
         </div>
 
         <div class="sign-up-form">
           <form class="sign-up">
-            <input class="sign-up-email" name="credentials[email]" type="text" placeholder="email"><br>
-            <input class="sign-up-password" name="credentials[password]" type="text" placeholder="password"><br>
-            <input class="sign-up-confirm-password" name="credentials[confirm-password]" type="text" placeholder="confirm password"><br>
+            <input class="sign-up-email" name="credentials[email]" type="email" placeholder="email"><br>
+            <input class="sign-up-password" name="credentials[password]" type="password" placeholder="password"><br>
+            <input class="sign-up-confirm-password" name="credentials[password_confirmation]" type="password" placeholder="confirm password"><br>
             <button class="sign-up-submit" type="submit">Sign Up!</button>
           </form>
         </div>
@@ -58,16 +58,17 @@
         </header>
         
         <div class="game-systems-display">
-          <div class="auth-system-message">
-            <div class="system-message">Sign In Successful!</div>
+          <div class="system-message">
+            <div class="auth-system-message"></div>
           </div>
   
           <div class="change-password-form">
             <form class="change-password">
-              <input class="old-password" name="credentials[old-password]" type="text" placeholder="old password"><br>
-              <input class="new-password" name="credentials[new-password]" type="text" placeholder="new password"><br>
-              <button class="sign-up-submit" type="submit">Change It!</button>
+              <input class="old-password" name="passwords[old]" type="password" placeholder="old password"><br>
+              <input class="new-password" name="passwords[new]" type="password" placeholder="new password"><br>
+              <button class="change-password-submit" type="submit">Change It!</button>
             </form>
+            <button class="cancel" type="submit">Cancel</button>
           </div>
   
           <div class="game-buttons">
@@ -78,7 +79,7 @@
         <div class="game-board-display">
 
           <div class="game-messages">
-            <div class="message">Game Message</div>
+            <div class="game-message">Game Message</div>
           </div>
         
           <div class="container game-board">
